@@ -44,14 +44,19 @@ API_SECRET = "API密钥"
 3. **配置提币参数**
 脚本默认提币币种为 ETH，网络为 OPTIMISM，提币金额和时间间隔如下：
 ```bash
-COIN = "ETH"  # 提币币种
-NETWORK = "OPTIMISM"  # 提币网络
 AMOUNT_MIN = 0.01  # 最小提币金额
 AMOUNT_MAX = 0.03  # 最大提币金额
 DELAY_MIN = 10  # 最小延迟时间（秒）
 DELAY_MAX = 30  # 最大延迟时间（秒）
+
+COIN = "ETH"  # 提币币种
+NETWORK = "OPTIMISM"  # 提币网络
 ```
 根据需求修改以上参数，例如更改币种为 BNB 或网络为 BSC。
+如不知提币币种及提币网络格式，可下载**币安提币市种详细.txt**自行搜索并将关键信息填入
+- 关键信息为**COIN**、**NETWORK**
+- ![image](https://github.com/user-attachments/assets/c6840645-6502-49e2-8466-bf088f9933ae)
+
 
 - **提币数量需大于币安规定的最小提现金额**
 - ![image](https://github.com/user-attachments/assets/3dbb2172-03a3-42d5-b822-2e8519fc7a68)
